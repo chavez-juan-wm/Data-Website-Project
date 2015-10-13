@@ -1,0 +1,83 @@
+button
+{
+    padding: 50px 50px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+#board
+{
+    text-align: center;
+}
+.square
+{
+    width:100px;
+    height:100px;
+}
+.v
+{
+    border-left:1px solid #000;
+    border-right:1px solid #000;
+}
+.h
+{
+    border-top:1px solid #000;
+    border-bottom:1px solid #000;
+}
+#headers
+{
+
+}
+#scores
+{
+    float: left;
+    padding-left: 355px;
+    font-size: x-large;
+}
+#player
+{
+    float: right;
+    padding-right: 355px;
+    font-size: x-large;
+}
+
+#header
+{
+    background-color: black;
+    color: white;
+    padding: .2px 10px;
+    text-align: center;
+}
+#container
+{
+    width: auto;
+}
+#navigator
+{
+    width: 20%;
+    height: 555px;
+    border: solid;
+    float: left;
+}
+#navigator li
+{
+    list-style-type: none
+}
+li
+{
+    margin: 25px;
+}
+#bodyText
+{
+    float: left;
+    border: solid;
+    width: 79%;
+    height: 555px;
+}
+a
+{
+    color: black;
+}

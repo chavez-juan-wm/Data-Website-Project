@@ -24,6 +24,10 @@ li
 {
     margin: 25px;
 }
+#graphText li
+{
+   margin: 10px;
+}
 #bodyText
 {
     float: left;
@@ -31,12 +35,31 @@ li
     width: 79%;
     height: 555px;
 }
+#graphBox
+{
+    border: solid green;
+    width: 80%;
+    height: 38%;
+    margin: 15px auto;
+}
+#changeGraph
+{
+    padding-top: 15px;
+    text-align: center;
+}
 p
 {
     padding-left: 15px;
     padding-right: 15px;
+    margin: 10px 20px;
+    line-height: 160%;
 }
 a
 {
     color: black;
+}
+#piechart
+{
+    width: auto;
+    height: auto;
 }

@@ -2,42 +2,82 @@
 <html>
 <head>
     <title>Game Violence</title>
-    <link rel="stylesheet" type="text/css" href="styleSheet.css">
+    <link rel="stylesheet" type="text/css" href="violenceStyles.css">
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script src="scripts.js"></script>
 </head>
 <body>
 
 <div id = header>
-    <h2>Violence in Games!</h2>
+    <h2>Violence in Games</h2>
 </div>
 
 <div id = container>
 
     <div id = navigator>
         <ul>
-            <li>Home</li>
-            <li>Games and Violence</li>
-            <li>Art</li>
-            <li>Education</li>
-            <li>Life Skills</li>
-            <li>Statistics</li>
-            <li>Games!</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gameViolence.html"> Games and Violence</a></li>
+            <li><a href="gameEducation.html">Education</a></li>
+            <li><a href="TicTacToe.html">Tic Tac Toe</a></li>
+            <li><a href="sources.html">Sources</a></li>
         </ul>
     </div>
 
     <div id = bodyText>
 
-        <h2 style="text-align: center"> Video Games are Wrongly Accused </h2>
-        <p>Video games have been the source of much heated debate. They are being blamed for the "increase" of violence in the world.
-            Data shows that playing violent games increase violent behavior in
-        </p>
+        <div id = "graphBox">
 
-    </div>
-        <div id = pictures>
+            <div id="chart_div">
+
+                <script>
+                    google.load('visualization', '1', {packages: ['corechart', 'bar']});
+
+                        var data = google.visualization.arrayToDataTable([
+                            ['Year', 'Total Violent Crimes'],
+                            ['1995', 115592],
+                            ['1998', 79999],
+                            ['2001', 67002],
+                            ['2004', 66268],
+                            ['2007', 73247]
+                        ]);
+
+                        var options = {
+                            title: 'Violent Crimes by Juveniles',
+                            chartArea: {width: '50%'},
+                            hAxis: {
+                                title: 'Total Violent Crimes',
+                                minValue: 0
+                            },
+                            vAxis: {
+                                title: 'Year'
+                            }
+                        };
+
+                        var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+
+                        chart.draw(data, options);
+                </script>
+
+            </div>
+
+            <div id = "changeGraph"> <button onclick="drawBasic()">Change the Graph</button> </div>
+
+        </div>
+
+        <div id = "graphText">
+
+            <p>Video games have been the source of a heated debate. They are being blamed for the "increase" of violence in the world.
+            However, data begs to differ with that popular belief. Data shows that video game sales and crimes have no correlation. As
+            game sales rise, crimes seem to drop. It doesn't make sense to keep blaming games for the violence in the world. There are
+            many factors that lead people to commit crimes, and it doesn't seem fair that video games should be the only thing to blame
+            for all of the crimes.</p>
 
         </div>
     </div>
-
 </div>
 
 </body>
 </html>
+
+<!--http://videogames.procon.org/view.resource.php?resourceID=003627-->

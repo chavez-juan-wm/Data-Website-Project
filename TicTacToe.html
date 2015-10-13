@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" type="text/css" href="TicTacToeStyles.css">
+    <script src="TicTacToeFunctions.js"></script>
+</head>
+
+<body>
+
+<div id = header>
+    <h2>Tic Tac Toe!</h2>
+</div>
+
+<div id = container>
+
+    <div id = navigator>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gameViolence.html"> Games and Violence</a></li>
+            <li><a href="gameEducation.html">Education</a></li>
+            <li><a href="TicTacToe.html">Tic Tac Toe</a></li>
+            <li><a href="sources.html">Sources</a></li>
+        </ul>
+    </div>
+
+    <div id = bodyText>
+
+        <div id = headers>
+            <div id = scores><h4>Score: 0 | 0</h4></div>
+            <div id = player><h4>Player 1</h4></div>
+
+        </div>
+
+        <div id="board">
+            <table align="center">
+                <tr>
+                    <td class="square" id = "1"> <button onclick="Winner('1')"></button> </td>
+                    <td class="square v" id = "2"> <button onclick="Winner('2')"></button > </td>
+                    <td class="square" id = "3"> <button onclick="Winner('3')"></button> </td>
+                </tr>
+                <tr>
+                    <td class="square h" id = "4"> <button onclick="Winner('4')"></button> </td>
+                    <td class="square v h" id = "5"> <button  onclick="Winner('5')"></button> </td>
+                    <td class="square h" id = "6"> <button onclick="Winner('6')"></button> </td>
+                </tr>
+                <tr>
+                    <td class="square" id = "7"> <button onclick="Winner('7')"></button> </td>
+                    <td class="square v" id = "8"> <button onclick="Winner('8')"></button> </td>
+                    <td class="square" id = "9"> <button onclick="Winner('9')"></button> </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
